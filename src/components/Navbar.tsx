@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 mt-4">
-              <img src="src/Assets/XLogica__1.png" alt="Description" width="200" />
+              <img src="Images/XLogica__1.png" alt="Description" width="200" />
               {/* <Brain className="h-8 w-8 text-blue-700" /> */}
               {/* <span className="font-bold text-xl text-gray-900">Xlogica</span> */}
             </Link>
