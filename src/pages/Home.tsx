@@ -1,21 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Brain, Beaker, Briefcase, ArrowRight, Users, Award, BookOpen, TrendingUp } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Brain,
+  Beaker,
+  Briefcase,
+  ArrowRight,
+  Users,
+  Award,
+  BookOpen,
+  TrendingUp,
+} from "lucide-react";
 
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+      <section className="relative bg-[url('src/Assets/Hero_Background.jpg')] bg-cover bg-center text-white">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Innovating the Future of
-              <span className="block text-blue-300">Technology & Education</span>
+              <span className="block text-blue-300">
+                Technology & Education
+              </span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Empowering minds, advancing research, and delivering cutting-edge solutions across three dynamic divisions.
+              Empowering minds, advancing research, and delivering cutting-edge
+              solutions across three dynamic divisions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -44,7 +56,8 @@ const Home: React.FC = () => {
               Three Divisions, One Vision
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how our integrated approach to education, research, and technology solutions creates lasting impact.
+              Discover how our integrated approach to education, research, and
+              technology solutions creates lasting impact.
             </p>
           </div>
 
@@ -54,9 +67,13 @@ const Home: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mb-6 group-hover:bg-blue-200 transition-colors">
                 <Brain className="h-8 w-8 text-blue-700" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Xlogica EDU</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Xlogica EDU
+              </h3>
               <p className="text-gray-600 mb-6">
-                Empowering future tech leaders through project-based learning, research-driven curriculum, and expert mentorship in AI, IoT, and emerging technologies.
+                Empowering future tech leaders through project-based learning,
+                research-driven curriculum, and expert mentorship in AI, IoT,
+                and emerging technologies.
               </p>
               <Link
                 to="/edu"
@@ -72,9 +89,13 @@ const Home: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-lg mb-6 group-hover:bg-emerald-200 transition-colors">
                 <Beaker className="h-8 w-8 text-emerald-700" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Research Park</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Research Park
+              </h3>
               <p className="text-gray-600 mb-6">
-                Advancing the frontiers of AI, healthcare technology, and industrial innovation through collaborative research and breakthrough discoveries.
+                Advancing the frontiers of AI, healthcare technology, and
+                industrial innovation through collaborative research and
+                breakthrough discoveries.
               </p>
               <Link
                 to="/research"
@@ -90,9 +111,13 @@ const Home: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mb-6 group-hover:bg-orange-200 transition-colors">
                 <Briefcase className="h-8 w-8 text-orange-700" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">IT Solutions</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                IT Solutions
+              </h3>
               <p className="text-gray-600 mb-6">
-                Delivering enterprise-grade AI/ML solutions, cloud infrastructure, and digital transformation services to businesses worldwide.
+                Delivering enterprise-grade AI/ML solutions, cloud
+                infrastructure, and digital transformation services to
+                businesses worldwide.
               </p>
               <Link
                 to="/it-solutions"
@@ -164,7 +189,8 @@ const Home: React.FC = () => {
                 />
               </div>
               <p className="text-gray-600 mb-4">
-                "The AI/ML program at Xlogica EDU transformed my career. The hands-on projects and industry mentorship were invaluable."
+                "The AI/ML program at Xlogica EDU transformed my career. The
+                hands-on projects and industry mentorship were invaluable."
               </p>
               <div className="font-semibold text-gray-900">Sarah Chen</div>
               <div className="text-gray-500">ML Engineer at Google</div>
@@ -179,10 +205,15 @@ const Home: React.FC = () => {
                 />
               </div>
               <p className="text-gray-600 mb-4">
-                "Collaborating with Xlogica Research Park has accelerated our breakthrough in healthcare AI applications."
+                "Collaborating with Xlogica Research Park has accelerated our
+                breakthrough in healthcare AI applications."
               </p>
-              <div className="font-semibold text-gray-900">Dr. Michael Rodriguez</div>
-              <div className="text-gray-500">Chief Research Officer, MedTech Innovations</div>
+              <div className="font-semibold text-gray-900">
+                Dr. Michael Rodriguez
+              </div>
+              <div className="text-gray-500">
+                Chief Research Officer, MedTech Innovations
+              </div>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8">
@@ -194,7 +225,8 @@ const Home: React.FC = () => {
                 />
               </div>
               <p className="text-gray-600 mb-4">
-                "Xlogica's IT Solutions team delivered exceptional cloud migration services that transformed our operations."
+                "Xlogica's IT Solutions team delivered exceptional cloud
+                migration services that transformed our operations."
               </p>
               <div className="font-semibold text-gray-900">James Liu</div>
               <div className="text-gray-500">CTO, FinanceFlow</div>
@@ -210,7 +242,8 @@ const Home: React.FC = () => {
             Ready to Shape the Future?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of innovators, researchers, and industry leaders who are transforming technology and education.
+            Join thousands of innovators, researchers, and industry leaders who
+            are transforming technology and education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
