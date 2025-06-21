@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import heroBackground from "../../public/Images/Hero_Background.jpg";
+import JanakaJayalath from "../../public/Images/Profile Pictures/Janaka Jayalath.jpeg"
 
 const Home: React.FC = () => {
   return (
@@ -190,7 +191,7 @@ const Home: React.FC = () => {
             <div className="bg-gray-50 rounded-xl p-8">
               <div className="mb-6">
                 <img
-                  src="public/Images/Profile Pictures/Janaka Jayalath.jpeg"
+                  src={JanakaJayalath}
                   alt="Dr.Janaka Jayalath"
                   className="w-12 h-12 rounded-full"
                 />
