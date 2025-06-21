@@ -11,11 +11,15 @@ import {
   TrendingUp,
 } from "lucide-react";
 
+import heroBackground from '../../public/Images/Hero_Background.jpg';
+
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[url('public/Images/Hero_Background.jpg')] bg-cover bg-center text-white">
+      <section className="relative bg-cover bg-center text-white" 
+      style={{ backgroundImage: `url(${heroBackground})` }}
+      >
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
