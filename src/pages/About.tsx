@@ -1,7 +1,7 @@
 import React from 'react';
 import { Brain, Target, Eye, Award, Users, Calendar } from 'lucide-react';
 import aboutusbackdround from "../../Public/aboutusbackdround/aboutus.jpg";
-
+import Mrmohan from "../../Public/mr_mohan.png";
 
 const About: React.FC = () => {
 
@@ -253,7 +253,7 @@ Consultant & Team Lead – AI and IT Solutions, Xlogica</div>
             <div className="bg-gray-50 rounded-xl p-8">
               <div className="mb-6">
                 <img
-                  src="Public\mr_mohan.png"
+                  src={Mrmohan}
                   alt="Mr . Mohan Perea "
                   className="w-20 h-20 rounded-full"
                 />
