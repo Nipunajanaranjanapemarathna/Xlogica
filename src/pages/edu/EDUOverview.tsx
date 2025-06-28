@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, BookOpen, Users, Trophy, ArrowRight, Target, Eye, Lightbulb } from 'lucide-react';
 
+
 const EDUOverview: React.FC = () => {
   return (
     <div className="min-h-screen">
