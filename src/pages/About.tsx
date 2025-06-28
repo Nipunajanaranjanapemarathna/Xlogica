@@ -1,6 +1,6 @@
 import React from 'react';
 import { Brain, Target, Eye, Award, Users, Calendar } from 'lucide-react';
-import aboutusbackdround from "../../public/aboutusbackdround/aboutus.jpg";
+import aboutusbackdround from "../../Public/aboutusbackdround/aboutus.jpg";
 
 
 const About: React.FC = () => {
