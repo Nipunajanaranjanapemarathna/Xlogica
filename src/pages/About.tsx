@@ -2,6 +2,9 @@ import React from 'react';
 import { Brain, Target, Eye, Award, Users, Calendar } from 'lucide-react';
 import aboutusbackdround from "../../Public/aboutusbackdround/aboutus.jpg";
 import Mrmohan from "../../Public/mr_mohan.png";
+import Drchamra from "../../Public/Untitled (1080 x 1080 px) (3).png";
+import Drjanaka from "../../Public/Dr_janaka.png";
+import Mrdilip from "../../Public/mr.dilip.png"
 
 const About: React.FC = () => {
 
@@ -205,8 +208,8 @@ const About: React.FC = () => {
             <div className="bg-gray-50 rounded-xl p-8">
               <div className="mb-6">
                 <img
-                  src="Public\Dr_janaka.png"
-                  alt="Dr. Michael Rodriguez"
+                  src={Drjanaka}
+                  alt="Dr Janaka"
                   className="w-20 h-20 rounded-full"
                 />
               </div>
@@ -222,8 +225,8 @@ const About: React.FC = () => {
             <div className="bg-gray-50 rounded-xl p-8">
               <div className="mb-6">
                 <img
-                  src="Public\Untitled (1080 x 1080 px) (3).png"
-                  alt="Dr. Michael Rodriguez"
+                  src={Drchamra}
+                  alt="Dr. Chamara"
                   className="w-20 h-20 rounded-full"
                 />
               </div>
@@ -270,8 +273,8 @@ Distinguished Engineer | Consultant & Master Trainer in TVET and Skills Developm
             <div className="bg-gray-50 rounded-xl p-8">
               <div className="mb-6">
                 <img
-                  src="Public\mr.dilip.png"
-                  alt="Dr. Michael Rodriguez"
+                  src={Mrdilip}
+                  alt="Mr. Dilip"
                   className="w-20 h-20 rounded-full"
                 />
               </div>
