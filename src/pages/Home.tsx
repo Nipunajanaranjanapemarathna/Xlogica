@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, Beaker, Briefcase, ArrowRight, Users, Award, BookOpen, TrendingUp } from 'lucide-react';
 
-import heroBackground from "../../public/herobackground/hero.webp";
+import heroBackground from "../../Public/herobackground/hero.webp";
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen ">
