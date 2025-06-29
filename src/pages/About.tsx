@@ -1,20 +1,28 @@
 import React from 'react';
 import { Brain, Target, Eye, Award, Users, Calendar } from 'lucide-react';
+import aboutusbackdround from "../../public/aboutusbackdround/aboutus.jpg";
+
 
 const About: React.FC = () => {
+
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Xlogica</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Founded on the belief that technology and education can transform lives, we've built a comprehensive ecosystem of learning, research, and innovation.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative bg-cover bg-top text-white h-screen"
+  style={{ backgroundImage: `url(${aboutusbackdround})` }} // 🔁 Replace with your actual image file in public/
+>
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center">
+      <h1 className="text-4xl md:text-5xl font-bold mb-6">About Xlogica</h1>
+      <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+        Founded on the belief that technology and education can transform lives, we've built a comprehensive ecosystem of learning, research, and innovation.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Mission & Vision */}
       <section className="py-20 bg-white">
@@ -116,7 +124,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Leadership Team</h2>
@@ -161,6 +169,150 @@ const About: React.FC = () => {
               <p className="text-gray-600">
                 Enterprise technology veteran with experience scaling solutions for Fortune 500 companies.
               </p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Legendary Board
+            </h2>
+            <p className="text-xl text-gray-600">
+              The Immortal Engines Behind Xlogica’s Rise.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                  alt="Sarah Chen"
+                  className="w-20 h-20 rounded-full object-cover object-center "
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "The AI/ML program at Xlogica EDU transformed my career. The hands-on projects and industry mentorship were invaluable."
+              </p>
+              <div className="font-semibold text-gray-900">Sarah Chen</div>
+              <div className="text-gray-500">ML Engineer at Google</div>
+            </div>
+            
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="Public\Dr_janaka.png"
+                  alt="Dr. Michael Rodriguez"
+                  className="w-20 h-20 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Partnering with Xlogica allows me to contribute toward shaping smarter, greener, and more sustainable solutions across education, research, and real-world innovation."
+              </p>
+              <div className="font-semibold text-gray-900">Dr. Janaka Jayalath</div>
+              <div className="text-gray-500">Senior Lecturer, University of Vocational Technology (UoVT)
+                ,Chief Advisor & Consultant, Xlogica</div>
+            </div>
+            
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="Public\Untitled (1080 x 1080 px) (3).png"
+                  alt="Dr. Michael Rodriguez"
+                  className="w-20 h-20 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Xlogica’s forward-thinking approach in AI, Machine Learning, and Data Science aligns seamlessly with my passion for developing transformative digital solutions"
+              </p>
+              <div className="font-semibold text-gray-900">Dr. D. L. Chamara Pramod Liyanage</div>
+              <div className="text-gray-500">Doctor of Engineering, Senior Lecturer, University of Sri Jayewardenepura
+Consultant & Team Lead – AI and IT Solutions, Xlogica</div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                  alt="Dr. Michael Rodriguez"
+                  className="w-12 h-12 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Collaborating with Xlogica Research Park has accelerated our breakthrough in healthcare AI applications."
+              </p>
+              <div className="font-semibold text-gray-900">Dr. Michael Rodriguez</div>
+              <div className="text-gray-500">Chief Research Officer, MedTech Innovations</div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="Public\mr_mohan.png"
+                  alt="Mr . Mohan Perea "
+                  className="w-20 h-20 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "At Xlogica, we are building more than solutions — we are building futures by merging engineering excellence with transformative education and skills development."
+              </p>
+              <div className="font-semibold text-gray-900">Mr. Mohan Perera</div>
+              <div className="text-gray-500">Managing Director & CEO, Xlogica
+Distinguished Engineer | Consultant & Master Trainer in TVET and Skills Development</div>
+            </div>
+
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="Public\mr.dilip.png"
+                  alt="Dr. Michael Rodriguez"
+                  className="w-20 h-20 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Collaborating with Xlogica enables me to inspire the next generation of professionals by integrating global hospitality standards with future-focused vocational training."
+              </p>
+              <div className="font-semibold text-gray-900">Mr. Dilip de Silva</div>
+              <div className="text-gray-500">Chairman, Hotels Classification Board – Sri Lanka Tourism
+              </div>
+                <div className="text-gray-500">Vice President - BLMS</div>
+
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                  alt="Dr. Michael Rodriguez"
+                  className="w-12 h-12 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Collaborating with Xlogica Research Park has accelerated our breakthrough in healthcare AI applications."
+              </p>
+              <div className="font-semibold text-gray-900">Dr. Michael Rodriguez</div>
+              <div className="text-gray-500">Chief Research Officer, MedTech Innovations</div>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="mb-6">
+                <img
+                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
+                  alt="James Liu"
+                  className="w-12 h-12 rounded-full"
+                />
+              </div>
+              <p className="text-gray-600 mb-4">
+                "Xlogica's IT Solutions team delivered exceptional cloud migration services that transformed our operations."
+              </p>
+              <div className="font-semibold text-gray-900">James Liu</div>
+              <div className="text-gray-500">CTO, FinanceFlow</div>
             </div>
           </div>
         </div>
