@@ -10,11 +10,11 @@ const About: React.FC = () => {
     <div className="min-h-screen ">
       {/* Hero Section */}
       <section
-  className="relative bg-cover bg-top text-white h-screen"
+  className="relative bg-cover bg-center text-white h-96"
   style={{ backgroundImage: `url(${aboutusbackdround})` }} // 🔁 Replace with your actual image file in public/
 >
   <div className="absolute inset-0 bg-black opacity-50"></div>
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center justify-center h-full">
     <div className="text-center">
       <h1 className="text-4xl md:text-5xl font-bold mb-6">About Xlogica</h1>
       <p className="text-xl text-gray-200 max-w-3xl mx-auto">
@@ -186,7 +186,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
@@ -202,7 +202,7 @@ const About: React.FC = () => {
             </div>
             
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="Public\Dr_janaka.png"
@@ -219,7 +219,7 @@ const About: React.FC = () => {
             </div>
             
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="Public\Untitled (1080 x 1080 px) (3).png"
@@ -235,7 +235,7 @@ const About: React.FC = () => {
 Consultant & Team Lead – AI and IT Solutions, Xlogica</div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
@@ -250,7 +250,7 @@ Consultant & Team Lead – AI and IT Solutions, Xlogica</div>
               <div className="text-gray-500">Chief Research Officer, MedTech Innovations</div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="Public\mr_mohan.png"
@@ -267,7 +267,7 @@ Distinguished Engineer | Consultant & Master Trainer in TVET and Skills Developm
             </div>
 
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <div className="bg-gray-100 rounded-xl p-8">
               <div className="mb-6">
                 <img
                   src="Public\mr.dilip.png"
