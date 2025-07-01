@@ -11,81 +11,42 @@ const Courses: React.FC = () => {
   const courses = [
     {
       id: 1,
-      title: 'Machine Learning Fundamentals',
+      title: 'Machine Learning & AI',
       category: 'AI/ML',
-      difficulty: 'Beginner',
-      duration: '8 weeks',
-      students: 1250,
+      difficulty: 'Beginner to Intermediate',
+      duration: '6 months',
+      students: 0,
       rating: 4.9,
-      instructor: 'Dr. Sarah Chen',
+      instructor: 'Dr. Chamara Liyanage',
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
       description: 'Master the fundamentals of machine learning with hands-on projects using Python and scikit-learn.',
-      price: '$299'
+      price: 'Rs. 30 000.00'
     },
     {
       id: 2,
-      title: 'Deep Learning with TensorFlow',
-      category: 'AI/ML',
+      title: 'IoT & AI for Tutors',
+      category: 'IoT & AI',
       difficulty: 'Intermediate',
-      duration: '12 weeks',
-      students: 890,
+      duration: '6 months',
+      students: 0,
       rating: 4.8,
-      instructor: 'Prof. Michael Rodriguez',
+      instructor: 'Dr. Chamara Liyanage',
       image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
       description: 'Build neural networks and deep learning models for computer vision and natural language processing.',
-      price: '$399'
+      price: 'Rs. 25 000.00'
     },
     {
       id: 3,
-      title: 'IoT Systems Design',
+      title: 'IoT for Kids',
       category: 'IoT',
-      difficulty: 'Intermediate',
-      duration: '10 weeks',
-      students: 650,
+      difficulty: 'Beginner',
+      duration: '04 months',
+      students: 0,
       rating: 4.7,
-      instructor: 'Dr. Alex Kim',
+      instructor: 'Dr. Chamara Liyanage',
       image: 'https://images.pexels.com/photos/8386664/pexels-photo-8386664.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
       description: 'Design and implement IoT solutions using Arduino, Raspberry Pi, and cloud platforms.',
-      price: '$349'
-    },
-    {
-      id: 4,
-      title: 'Cloud Architecture with AWS',
-      category: 'Cloud & DevOps',
-      difficulty: 'Advanced',
-      duration: '14 weeks',
-      students: 720,
-      rating: 4.9,
-      instructor: 'James Liu',
-      image: 'https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      description: 'Master AWS services and design scalable, secure cloud architectures for enterprise applications.',
-      price: '$449'
-    },
-    {
-      id: 5,
-      title: 'Cybersecurity Fundamentals',
-      category: 'Cybersecurity',
-      difficulty: 'Beginner',
-      duration: '6 weeks',
-      students: 980,
-      rating: 4.6,
-      instructor: 'Dr. Emily Watson',
-      image: 'https://images.pexels.com/photos/8386436/pexels-photo-8386436.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      description: 'Learn essential cybersecurity concepts, threat analysis, and security best practices.',
-      price: '$249'
-    },
-    {
-      id: 6,
-      title: 'Data Science with Python',
-      category: 'Data Science',
-      difficulty: 'Intermediate',
-      duration: '10 weeks',
-      students: 1100,
-      rating: 4.8,
-      instructor: 'Dr. Maria Garcia',
-      image: 'https://images.pexels.com/photos/8386441/pexels-photo-8386441.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop',
-      description: 'Analyze data, create visualizations, and build predictive models using Python libraries.',
-      price: '$329'
+      price: 'Rs. 20 000.00'
     }
   ];
 
@@ -202,7 +163,7 @@ const Courses: React.FC = () => {
 
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-sm text-gray-600">Instructor: {course.instructor}</span>
-                    <span className="text-2xl font-bold text-blue-700">{course.price}</span>
+                    <span className="text-lg font-bold text-blue-700">{course.price}</span>
                   </div>
 
                   <button className="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-lg font-semibold transition-colors">

@@ -198,7 +198,7 @@ const ITSolutionsOverview: React.FC = () => {
       </section>
 
       {/* Success Stories */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client Success Stories</h2>
@@ -254,7 +254,7 @@ const ITSolutionsOverview: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-20 bg-orange-900 text-white">
@@ -271,7 +271,7 @@ const ITSolutionsOverview: React.FC = () => {
               <Users className="h-12 w-12 text-orange-300 mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-3">Expert Team</h3>
               <p className="text-orange-100">
-                PhD-level researchers and industry veterans with 15+ years of experience.
+                PhD-level researchers and industry veterans.
               </p>
             </div>
 

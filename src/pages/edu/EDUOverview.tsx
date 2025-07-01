@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, BookOpen, Users, Trophy, ArrowRight, Target, Eye, Lightbulb } from 'lucide-react';
-import edu from "Public\eduBackground\edubackgroung.jpg";
+import edu from "../../../Public/eduBackground/edubackground.jpg";
+
 
 const EDUOverview: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const EDUOverview: React.FC = () => {
       
      <section
   className="relative bg-cover bg-center bg-no-repeat text-white py-20"
-  style={{ backgroundImage: `url('/eduBackground/edubackground.jpg')` }}
+  style={{ backgroundImage: `url(${edu})` }}
 >
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black opacity-60"></div>

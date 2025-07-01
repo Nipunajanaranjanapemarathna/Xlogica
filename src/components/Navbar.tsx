@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
     ],
     it: [
       { name: 'Overview', path: '/it-solutions', icon: Briefcase },
-      { name: 'Products & Services', path: '/it-solutions/products', icon: Briefcase },
+      { name: 'Products & Services', path: '', icon: Briefcase },
     ],
   };
 
@@ -35,7 +35,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Brain className="h-8 w-8 text-blue-700" />
+            
+              <img src="src/Assets/XLogica__1.png" alt="Description" width="200" />
+              {/* <Brain className="h-8 w-8 text-blue-700" /> */}
               <span className="font-bold text-xl text-gray-900">Xlogica</span>
             </Link>
           </div>
