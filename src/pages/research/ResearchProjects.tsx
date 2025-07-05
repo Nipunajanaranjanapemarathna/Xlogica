@@ -117,7 +117,7 @@ const ResearchProjects: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-900 to-emerald-700 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-950 to-blue-700 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Research Projects & Publications</h1>
@@ -142,13 +142,13 @@ const ResearchProjects: React.FC = () => {
                     className="w-full h-64 object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Featured
                     </span>
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                      project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-green-800'
+                      project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-blue-800'
                     }`}>
                       {project.status}
                     </span>

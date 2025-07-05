@@ -1,38 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Brain, BookOpen, Users, Trophy, ArrowRight, Target, Eye, Lightbulb } from 'lucide-react';
+import edu from "Public\eduBackground\edubackgroung.jpg";
 
 
 const EDUOverview: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Empowering Future Tech Leaders
-            </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Experience world-class education in AI, ML, IoT, and emerging technologies through our innovative project-based learning approach.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/edu/courses"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Browse Courses
-              </Link>
-              <Link
-                to="/edu/projects"
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                View Projects
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+     <section
+  className="relative bg-cover bg-center bg-no-repeat text-white py-20"
+  style={{ backgroundImage: `url('/eduBackground/edubackground.jpg')` }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black opacity-60"></div>
+
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+    <div className="text-center flex flex-col items-center justify-center h-full">
+      <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        Empowering Future Tech Leaders
+      </h1>
+      <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
+        Experience world-class education in AI, ML, IoT, and emerging technologies through our innovative project-based learning approach.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Link
+          to="/edu/courses"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+        >
+          Browse Courses
+        </Link>
+        <Link
+          to="/edu/projects"
+          className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors"
+        >
+          View Projects
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Vision & Mission */}
       <section className="py-20 bg-white">
@@ -158,6 +168,7 @@ const EDUOverview: React.FC = () => {
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Deep Learning</span>
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Natural Language Processing</span>
               </div>
             </div>
 
